@@ -1,7 +1,15 @@
 Working with FLASH Messages:
  - Flash messages are used to store temporary messages that can be displayed to the user across different HTTP requests.
- 
+
  - This allows you to pass data (messages in this case) between different requests, making it easier to provide user feedback and notifications in web applications.
+
+ Example :
+ - req.flash('success', 'Login successful!');
+ 
+ - const successMessage = req.flash('success');
+ - // Render the view and pass the success message to display to the user
+ - res.render('somePage', { successMessage });
+
 
 
  - Install : npm i connect-flash
