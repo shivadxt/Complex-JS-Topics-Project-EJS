@@ -3,14 +3,14 @@ Working with FLASH Messages:
 
  - This allows you to pass data (messages in this case) between different requests, making it easier to provide user feedback and notifications in web applications.
 
- Example :
+Example :
  - req.flash('success', 'Login successful!');
- 
+
  - const successMessage = req.flash('success');
  - // Render the view and pass the success message to display to the user
  - res.render('somePage', { successMessage });
 
-
+Steps:
 
  - Install : npm i connect-flash
  (Make sure you've express-session installed and setup)
